@@ -8,28 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Jan 2021 22:00:36 +0800</lastBuildDate><atom:link href="https://zzzqiii.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>创建blog_by_hugo</title>
+      <title>创建blog by hugo</title>
       <link>https://zzzqiii.github.io/post/%E5%88%9B%E5%BB%BAblog_by_hugo/</link>
       <pubDate>Sat, 30 Jan 2021 22:00:36 +0800</pubDate>
       
       <guid>https://zzzqiii.github.io/post/%E5%88%9B%E5%BB%BAblog_by_hugo/</guid>
-      <description>利用hugo创建个人博客   创建Hugo网站
- # 进入想要存放网站文件夹的目录 cd /save dir path/ # 新建一个 Hugo 网站
-hugo new site zblog
-   修改主题
- #在zblog中新建一个 themes 的文件夹用于存储主题。
-Hugo Themes: https://themes.gohugo.io
- cd themes git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream   新建文章
- #进入想要存放网站文件夹的目录 cd .\zblog
-#新建文章
-hugo new post/first.md
-   本地预览网站效果
- #启动hugo
-hugo server -D
-   构建hugo网站
- 在zblog下执行hugo 命令
-   将网站文件夹转换为git库
- 在public文件夹下执行如下命令</description>
+      <description>&lt;p&gt;利用hugo创建个人博客&lt;/p&gt;</description>
     </item>
     
     <item>
