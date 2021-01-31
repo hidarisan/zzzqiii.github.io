@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on hidarino blog</title>
-    <link>http://zzzqiii.github.io/categories/</link>
+    <link>https://zzzqiii.github.io/categories/</link>
     <description>Recent content in Categories on hidarino blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 30 Jan 2021 22:00:36 +0800</lastBuildDate><atom:link href="http://zzzqiii.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jan 2021 22:00:36 +0800</lastBuildDate><atom:link href="https://zzzqiii.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技术笔记</title>
-      <link>http://zzzqiii.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
+      <link>https://zzzqiii.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sat, 30 Jan 2021 22:00:36 +0800</pubDate>
       
-      <guid>http://zzzqiii.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://zzzqiii.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     

@@ -19,21 +19,21 @@
 
 <meta name="generator" content="Hugo 0.80.0" />
 
-<link rel="canonical" href="http://zzzqiii.github.io/post/%E5%88%9B%E5%BB%BAblog_by_hugo/" />
+<link rel="canonical" href="https://zzzqiii.github.io/post/%E5%88%9B%E5%BB%BAblog_by_hugo/" />
 
 
 <meta property="og:title" content="创建blog" />
 <meta property="og:description" content="利用hugo创建个人博客" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://zzzqiii.github.io/post/%E5%88%9B%E5%BB%BAblog_by_hugo/" />
-<meta property="og:image" content="http://zzzqiii.github.io/img/default3.jpg"/>
+<meta property="og:url" content="https://zzzqiii.github.io/post/%E5%88%9B%E5%BB%BAblog_by_hugo/" />
+<meta property="og:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
 <meta property="article:published_time" content="2021-01-30T22:00:36+08:00" />
 <meta property="article:modified_time" content="2021-01-30T22:00:36+08:00" />
 
 
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://zzzqiii.github.io/img/default3.jpg"/>
+<meta name="twitter:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
 
 <meta name="twitter:title" content="创建blog"/>
 <meta name="twitter:description" content="利用hugo创建个人博客"/>
@@ -110,7 +110,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/zzzqiii.github.io\/'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/zzzqiii.github.io'"></i>
   </div>
   <div class="item">
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
@@ -148,7 +148,7 @@
                 Saturday, Jan 30, 2021
               
 
-            | 2 minutes read
+            | 3 minutes read
 
             | Update at
               
@@ -158,8 +158,7 @@
         </h1>
       </header>
 
-      <article class="main"><p>利用hugo创建个人博客</p>
-<h1 id="利用hugo创建个人博客">利用hugo创建个人博客</h1>
+      <article class="main"><h1 id="利用hugo创建个人博客">利用hugo创建个人博客</h1>
 <ol>
 <li>
 <p>安装chocolatey、hugo、git</p>
@@ -275,6 +274,29 @@ git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream
 <p>git push -u origin master</p>
 </blockquote>
 </li>
+<li>
+<p>修改博客背景</p>
+<blockquote>
+<p><a href="https://g1eny0ung.site/hugo-theme-dream/#/params-configurations">hugo-theme-dream</a></p>
+<p>根据里面的configure，修改config.toml，把一些参数加上。</p>
+<p>这里的背景图片应该是在\zblog\themes\dream\static\img中，在这个文件夹中添加自己喜欢的背景图，然后把图片的相对路径写在配置文件中。</p>
+<p>博客文章的封面图片应该在\zblog\public\img中，编辑md的时候，需要插入图片的话把图片的相对路径写上。</p>
+<p>参考主题的作者的<a href="https://github.com/g1eny0ung/blog">github</a></p>
+</blockquote>
+</li>
+<li>
+<p>博客背面添加blog</p>
+<blockquote>
+<p>#自我介绍</p>
+<p>hugo new about/me.md</p>
+<p>编辑md</p>
+<p>在about目录下添加index.md</p>
+<p>内容为</p>
+<pre><code>---
+headless: true
+---
+</code></pre></blockquote>
+</li>
 </ol></article>
     </section>
 
@@ -302,7 +324,7 @@ git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream
 
 
           var disqus_config = function () {
-            this.page.url = 'http:\/\/zzzqiii.github.io\/post\/%E5%88%9B%E5%BB%BAblog_by_hugo\/';  
+            this.page.url = 'https:\/\/zzzqiii.github.io\/post\/%E5%88%9B%E5%BB%BAblog_by_hugo\/';  
             this.page.identifier = '\/post\/%E5%88%9B%E5%BB%BAblog_by_hugo\/'; 
           };
 
@@ -480,6 +502,19 @@ git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream
   
   
   
+    <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+      <article>
+        <div class="ui top attached segment">
+          <h3 class="ui header">Me</h3>
+        </div>
+        <div class="ui bottom attached segment markdown-body">
+          <p>Hi, my name is Zuo Zhangqi.</p>
+<p>This is my blog.</p>
+<p>first try to write blog</p>
+        </div>
+      </article>
+    </section>
+  
 
   <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     <article>
@@ -544,7 +579,7 @@ git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream
 
 
             var disqus_config = function () {
-              this.page.url = 'http:\/\/zzzqiii.github.io\/post\/%E5%88%9B%E5%BB%BAblog_by_hugo\/';  
+              this.page.url = 'https:\/\/zzzqiii.github.io\/post\/%E5%88%9B%E5%BB%BAblog_by_hugo\/';  
               this.page.identifier = '/'; 
             };
 
@@ -647,7 +682,7 @@ git clone https://github.com/g1eny0ung/hugo-theme-dream.git dream
 </div>
 <script>
   $(document).ready(function () {
-    $.getJSON('http:\/\/zzzqiii.github.io\//index.json', function (data) {
+    $.getJSON('https:\/\/zzzqiii.github.io/index.json', function (data) {
       $('.ui.search').search({
         source: data,
         searchFields: ['title'],
