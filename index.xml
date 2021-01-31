@@ -25,16 +25,5 @@
       <description>aaaaaa</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://zzzqiii.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zzzqiii.github.io/about/</guid>
-      <description>-&amp;ndash;
-headless: true
--&amp;ndash;</description>
-    </item>
-    
   </channel>
 </rss>
