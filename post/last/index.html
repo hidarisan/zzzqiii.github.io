@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Last | My New Hugo Site</title>
+    <title>Last | hidarino blog</title>
 
     
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 
 
-<meta name="author" content="" />
-<meta name="description" content="" />
+
+<meta name="author" content="hidari" />
+<meta name="description" content="今天搬了几块砖" />
 
 
 
@@ -24,12 +26,15 @@
 <meta property="og:description" content="aaaaaa" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zzzqiii.github.io/post/last/" />
+<meta property="og:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
 <meta property="article:published_time" content="2021-01-30T21:23:27+08:00" />
 <meta property="article:modified_time" content="2021-01-30T21:23:27+08:00" />
 
 
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
+
 <meta name="twitter:title" content="Last"/>
 <meta name="twitter:description" content="aaaaaa"/>
 
@@ -46,22 +51,55 @@
   }
 
   
-
+  a {
+    color: seagreen !important;
+  }
   
 
   
+  .inverted a,
+  .inverted a:hover {
+     color: darkseagreen !important;
+  }
+  
 
+  
+  body.default {
+    
+    background-color: #ccc;
+    
+
+    
+    background-image: url(/img/default1.jpg);
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+    background-image: url(/img/default2.jpg);
+    
+  }
   
 </style>
 
     
 
 
+  
+    <link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/gruvbox-light.min.css" />
+  
 
 
 
 
-    
+
+    <link rel="stylesheet" href="/css/custom.css" />
   </head>
 
   <body class="default">
@@ -78,6 +116,10 @@
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
   </div>
   
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
 </nav>
 
     <div class="flip-container">
@@ -88,14 +130,14 @@
 <div class="ui centered relaxed grid dream-grid">
   <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
     
-    <section class="ui top attached segment">
+    <section class="ui attached segment">
       <header>
         <h1 class="ui large header">
           Last
           <div class="sub header">
             @
             
-              
+              hidari
             
 
             | 
@@ -144,7 +186,7 @@
 
           (function() { 
             var d = document, s = d.createElement('script');
-            s.src = 'https://' + '...' + '.disqus.com/embed.js';
+            s.src = 'https://' + 'zblog' + '.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
           })();
@@ -153,6 +195,16 @@
       </footer>
     
     
+    
+      <div class="ui segment utterances-comments" data-html2canvas-ignore>
+        <script src="https://utteranc.es/client.js"
+          repo="zzzqiii/zzzqiii.github.io"
+          issue-term="og:title"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
     
 
     
@@ -166,13 +218,15 @@
   <section class="ui top attached center aligned segment">
     <div class="ui small circular image">
       
+        <img src="/img/kakaxi.jpg">
+      
     </div>
 
     
     <h1 class="ui medium header">
     
-      &#39;s blog
-      <div class="sub header" style="margin-top: 0.5rem;"></div>
+      搬砖日志
+      <div class="sub header" style="margin-top: 0.5rem;">游戏人生</div>
     
     </h1>
     
@@ -226,7 +280,7 @@
             
               <div class="item">
                 <div class="content">
-                  <a class="item" href="/post/%E5%88%9B%E5%BB%BAblog_by_hugo/">创建blog by hugo</a>
+                  <a class="item" href="/post/%E5%88%9B%E5%BB%BAblog_by_hugo/">创建blog</a>
                 </div>
               </div>
             
@@ -243,6 +297,18 @@
   <section class="ui attached segment header-socials">
     <nav class="ui secondary menu dream-menu dream-socials">
   
+    <div class="item">
+      <a href="/index.xml">
+        <i class=" rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:zzqi@zju.edu.cn">
+        <i class=" mail icon" title="Email"></i>
+      </a>
+    </div>
   
 
   
@@ -255,6 +321,12 @@
 
   
 
+  
+    <div class="item">
+      <a href="https://github.com/zzzqiii" target="_blank">
+        <i class=" github icon" title="GitHub"></i>
+      </a>
+    </div>
   
 
   
@@ -266,7 +338,7 @@
 
   <section class="ui bottom attached center aligned segment">
     
-      <p>© 2021 My New Hugo Site</p>
+      <p>© 2021 hidarino blog</p>
     
 
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
@@ -295,6 +367,18 @@
       <div class="ui bottom attached segment">
         <nav class="ui secondary menu dream-menu dream-socials">
   
+    <div class="item">
+      <a href="/index.xml">
+        <i class="large rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:zzqi@zju.edu.cn">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
   
 
   
@@ -307,6 +391,12 @@
 
   
 
+  
+    <div class="item">
+      <a href="https://github.com/zzzqiii" target="_blank">
+        <i class="large github icon" title="GitHub"></i>
+      </a>
+    </div>
   
 
   
@@ -338,7 +428,7 @@
 
             (function() { 
               var d = document, s = d.createElement('script');
-              s.src = 'https://' + '...' + '.disqus.com/embed.js';
+              s.src = 'https://' + 'zblog' + '.disqus.com/embed.js';
               s.setAttribute('data-timestamp', +new Date());
               (d.head || d.body).appendChild(s);
             })();
@@ -356,10 +446,10 @@
     </div>
 
     <script>
-  window.defaultDark =  null 
-  window.backgroundDark =  null 
-  window.backgroundImageDark =  null 
-  window.darkNav =  null 
+  window.defaultDark =  true 
+  window.backgroundDark = "black"
+  window.backgroundImageDark = "/img/default2.jpg"
+  window.darkNav =  true 
   window.hasTwitterEmbed =  null 
 
   if (window.hasTwitterEmbed) {
@@ -395,8 +485,56 @@
 <script src="/js/post.js"></script>
 
 
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+  
+    
+      <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+     
+  
+
+  <script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "gruvbox-light"
+    var darkTheme = "gruvbox-dark"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
 
 
+
+
+
+    
+      <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/zzzqiii.github.io/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
 
     
 
@@ -408,7 +546,7 @@
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '...', 'auto');
+	ga('create', 'UA-98295641-1', 'auto');
 	
 	ga('send', 'pageview');
 }

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>404 Not Found | My New Hugo Site</title>
+    <title>404 Not Found | hidarino blog</title>
 
     
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 
 
-<meta name="author" content="" />
-<meta name="description" content="" />
+
+<meta name="author" content="hidari" />
+<meta name="description" content="今天搬了几块砖" />
 
 
 
@@ -21,16 +23,19 @@
 
 
 <meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="今天搬了几块砖" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://zzzqiii.github.io/404.html" />
+<meta property="og:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
 
 
 
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
+
 <meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="今天搬了几块砖"/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -45,16 +50,45 @@
   }
 
   
-
+  a {
+    color: seagreen !important;
+  }
   
 
   
+  .inverted a,
+  .inverted a:hover {
+     color: darkseagreen !important;
+  }
+  
 
+  
+  body.default {
+    
+    background-color: #ccc;
+    
+
+    
+    background-image: url(/img/default1.jpg);
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+    background-image: url(/img/default2.jpg);
+    
+  }
   
 </style>
 
      
-    
+    <link rel="stylesheet" href="/css/custom.css" />
   </head>
 
   <body class="default">
@@ -69,6 +103,10 @@
   </div>
   <div class="item">
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
   </div>
   
 </nav>
@@ -109,6 +147,18 @@
       <div class="ui bottom attached segment">
         <nav class="ui secondary menu dream-menu dream-socials">
   
+    <div class="item">
+      <a href="/index.xml">
+        <i class="large rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:zzqi@zju.edu.cn">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
   
 
   
@@ -121,6 +171,12 @@
 
   
 
+  
+    <div class="item">
+      <a href="https://github.com/zzzqiii" target="_blank">
+        <i class="large github icon" title="GitHub"></i>
+      </a>
+    </div>
   
 
   
@@ -152,7 +208,7 @@
 
             (function() { 
               var d = document, s = d.createElement('script');
-              s.src = 'https://' + '...' + '.disqus.com/embed.js';
+              s.src = 'https://' + 'zblog' + '.disqus.com/embed.js';
               s.setAttribute('data-timestamp', +new Date());
               (d.head || d.body).appendChild(s);
             })();
@@ -170,10 +226,10 @@
     </div>
 
     <script>
-  window.defaultDark =  null 
-  window.backgroundDark =  null 
-  window.backgroundImageDark =  null 
-  window.darkNav =  null 
+  window.defaultDark =  true 
+  window.backgroundDark = "black"
+  window.backgroundImageDark = "/img/default2.jpg"
+  window.darkNav =  true 
   window.hasTwitterEmbed =  null 
 
   if (window.hasTwitterEmbed) {
@@ -207,6 +263,28 @@
      
 
     
+      <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/zzzqiii.github.io/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
 
     
 
@@ -216,7 +294,7 @@
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '...', 'auto');
+	ga('create', 'UA-98295641-1', 'auto');
 	
 	ga('send', 'pageview');
 }

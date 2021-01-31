@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home | My New Hugo Site</title>
+    <title>Home | hidarino blog</title>
 
     
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 
 
-<meta name="author" content="" />
-<meta name="description" content="" />
+
+<meta name="author" content="hidari" />
+<meta name="description" content="今天搬了几块砖" />
 
 
 
@@ -20,17 +22,20 @@
 <link rel="canonical" href="https://zzzqiii.github.io/" />
 
 
-<meta property="og:title" content="My New Hugo Site" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="hidarino blog" />
+<meta property="og:description" content="今天搬了几块砖" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://zzzqiii.github.io/" />
+<meta property="og:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
 <meta property="og:updated_time" content="2021-01-31T17:08:18+08:00" />
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My New Hugo Site"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zzzqiii.github.io/img/default3.jpg"/>
+
+<meta name="twitter:title" content="hidarino blog"/>
+<meta name="twitter:description" content="今天搬了几块砖"/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -45,16 +50,45 @@
   }
 
   
-
+  a {
+    color: seagreen !important;
+  }
   
 
   
+  .inverted a,
+  .inverted a:hover {
+     color: darkseagreen !important;
+  }
+  
 
+  
+  body.default {
+    
+    background-color: #ccc;
+    
+
+    
+    background-image: url(/img/default1.jpg);
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+    background-image: url(/img/default2.jpg);
+    
+  }
   
 </style>
 
      
-    
+    <link rel="stylesheet" href="/css/custom.css" />
   </head>
 
   <body class="default">
@@ -71,6 +105,10 @@
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
   </div>
   
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
 </nav>
 
     <div class="flip-container">
@@ -84,13 +122,15 @@
   <section class="ui top attached center aligned segment">
     <div class="ui small circular image">
       
+        <img src="/img/kakaxi.jpg">
+      
     </div>
 
     
     <h1 class="ui medium header">
     
-      &#39;s blog
-      <div class="sub header" style="margin-top: 0.5rem;"></div>
+      搬砖日志
+      <div class="sub header" style="margin-top: 0.5rem;">游戏人生</div>
     
     </h1>
     
@@ -144,7 +184,7 @@
             
               <div class="item">
                 <div class="content">
-                  <a class="item" href="/post/%E5%88%9B%E5%BB%BAblog_by_hugo/">创建blog by hugo</a>
+                  <a class="item" href="/post/%E5%88%9B%E5%BB%BAblog_by_hugo/">创建blog</a>
                 </div>
               </div>
             
@@ -161,6 +201,18 @@
   <section class="ui attached segment header-socials">
     <nav class="ui secondary menu dream-menu dream-socials">
   
+    <div class="item">
+      <a href="/index.xml">
+        <i class=" rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:zzqi@zju.edu.cn">
+        <i class=" mail icon" title="Email"></i>
+      </a>
+    </div>
   
 
   
@@ -173,6 +225,12 @@
 
   
 
+  
+    <div class="item">
+      <a href="https://github.com/zzzqiii" target="_blank">
+        <i class=" github icon" title="GitHub"></i>
+      </a>
+    </div>
   
 
   
@@ -184,7 +242,7 @@
 
   <section class="ui bottom attached center aligned segment">
     
-      <p>© 2021 My New Hugo Site</p>
+      <p>© 2021 hidarino blog</p>
     
 
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
@@ -202,13 +260,13 @@
       <article class="ui attached segment card dream-card">
   <a class="image" href="https://zzzqiii.github.io/post/%E5%88%9B%E5%BB%BAblog_by_hugo/">
     
-      <img src="/img/kakaxi.jpg" alt="创建blog by hugo" />
+      <img src="/img/kakaxi.jpg" alt="创建blog" />
     
   </a>
 
   <div class="content">
     <h2 class="ui medium header">
-      <a href="/post/%E5%88%9B%E5%BB%BAblog_by_hugo/">创建blog by hugo</a>
+      <a href="/post/%E5%88%9B%E5%BB%BAblog_by_hugo/">创建blog</a>
     </h2>
     <div class="meta">
       <p class="date">Saturday, Jan 30, 2021</p>
@@ -219,9 +277,9 @@
   </div>
 
   <div class="extra content">
-    <div class="author">@&nbsp;</div>
+    <div class="author">@&nbsp;hidari</div>
     <div class="reading-time">
-      <i class="clock icon"></i>1 minute read</div>
+      <i class="clock icon"></i>2 minutes read</div>
   </div>
 </article>
 
@@ -231,7 +289,7 @@
       <article class="ui attached segment card dream-card">
   <a class="image" href="https://zzzqiii.github.io/post/last/">
     
-      <img src="/img/default1.jpg" alt="Last" />
+      <img src="/img/default3.jpg" alt="Last" />
     
   </a>
 
@@ -248,7 +306,7 @@
   </div>
 
   <div class="extra content">
-    <div class="author">@&nbsp;</div>
+    <div class="author">@&nbsp;hidari</div>
     <div class="reading-time">
       <i class="clock icon"></i>1 minute read</div>
   </div>
@@ -282,6 +340,18 @@
       <div class="ui bottom attached segment">
         <nav class="ui secondary menu dream-menu dream-socials">
   
+    <div class="item">
+      <a href="/index.xml">
+        <i class="large rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:zzqi@zju.edu.cn">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
   
 
   
@@ -294,6 +364,12 @@
 
   
 
+  
+    <div class="item">
+      <a href="https://github.com/zzzqiii" target="_blank">
+        <i class="large github icon" title="GitHub"></i>
+      </a>
+    </div>
   
 
   
@@ -325,7 +401,7 @@
 
             (function() { 
               var d = document, s = d.createElement('script');
-              s.src = 'https://' + '...' + '.disqus.com/embed.js';
+              s.src = 'https://' + 'zblog' + '.disqus.com/embed.js';
               s.setAttribute('data-timestamp', +new Date());
               (d.head || d.body).appendChild(s);
             })();
@@ -343,10 +419,10 @@
     </div>
 
     <script>
-  window.defaultDark =  null 
-  window.backgroundDark =  null 
-  window.backgroundImageDark =  null 
-  window.darkNav =  null 
+  window.defaultDark =  true 
+  window.backgroundDark = "black"
+  window.backgroundImageDark = "/img/default2.jpg"
+  window.darkNav =  true 
   window.hasTwitterEmbed =  null 
 
   if (window.hasTwitterEmbed) {
@@ -384,6 +460,28 @@
 
 
     
+      <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/zzzqiii.github.io/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+
+    
 
     
 
@@ -393,7 +491,7 @@
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '...', 'auto');
+	ga('create', 'UA-98295641-1', 'auto');
 	
 	ga('send', 'pageview');
 }
