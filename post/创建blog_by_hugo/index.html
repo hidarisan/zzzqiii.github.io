@@ -179,7 +179,14 @@
 <p>新建一个GitHub库</p>
 <blockquote>
 <p>新建一个 GitHub repository，库名为 <em>username</em>.<strong>github.io</strong>(后缀一定不能少，惨痛教训），<strong>username 即你的 GitHub 账号 username</strong>(也很重要)。</p>
-</blockquote>
+<p>生命仓库后，按照引导创建SSH密钥</p>
+<pre><code>git config --global user.name &quot;yourname&quot;
+git config --global user.email &quot;youremail&quot; 
+cd ~/.ssh
+ssh-keygen -t rsa -C “youremail”	#生成密钥，按三个回车，密码为空
+#最后得到了两个文件：id_rsa和id_rsa.pub，复制id_rsa.pub的内容
+#登录github后，进入个人设置settings---&gt;ssh and gpg keys--&gt;new ssh key 添加即可。title自行命名
+</code></pre></blockquote>
 </li>
 <li>
 <p>创建Hugo网站</p>
@@ -391,6 +398,12 @@ headless: true
     
       
       
+      <a class="ui label" href="/tags/cytoscape/" title="Cytoscape">
+        Cytoscape
+      </a>
+    
+      
+      
       <a class="ui label" href="/tags/hugo/" title="Hugo">
         Hugo
       </a>
@@ -421,6 +434,12 @@ headless: true
           </div>
           <div class="content">
             <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="/post/usage_of_cytoscape/">cytoscape使用</a>
+                </div>
+              </div>
             
               <div class="item">
                 <div class="content">
